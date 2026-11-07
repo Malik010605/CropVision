@@ -13,7 +13,6 @@
 | Edgar PRADET | School of Computer Science | Hanyang University (exchange) | edgar.pradet@edu.ece.fr |
 | Etienne SIOEN | School of Computer Science | Hanyang University (exchange) | etienne.sioen@edu.esilv.fr |
 
-> The university affiliation shown above refers to the university hosting this course. Home-university affiliations can be added if required.
 
 ## Table of Contents
 
