@@ -11,7 +11,7 @@
 |---|---|---|---|
 | Malik SAADI | School of Computer Science | Hanyang University (exchange) | malik.saadi@edu.ece.fr |
 | Edgar PRADET | School of Computer Science | Hanyang University (exchange) | edgar.pradet@edu.ece.fr |
-| Etienne SIOEN | School of Computer Science | Hanyang University (exchange) | etienne.sioen@edu.esilv.fr |
+| Etienne SIOEN | School of Computer Science | Hanyang University (exchange) | etienne.sioen@edu.devinci.fr |
 
 
 ## Table of Contents
