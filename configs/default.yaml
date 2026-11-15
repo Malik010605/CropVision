@@ -1,0 +1,107 @@
+project:
+  name: CropVision
+  seed: 42
+
+data:
+  source_url: https://zenodo.org/records/7711810/files/EuroSAT_RGB.zip?download=1
+  archive_md5: f46e308c4d50d4bf32fedad2d3d62f3b
+  raw_dir: data/raw
+  dataset_dir: data/raw/EuroSAT_RGB
+  split_dir: data/processed/splits
+  expected_image_size: [64, 64]
+  expected_mode: RGB
+  expected_class_counts:
+    AnnualCrop: 3000
+    Forest: 3000
+    HerbaceousVegetation: 3000
+    Highway: 2500
+    Industrial: 2500
+    Pasture: 2000
+    PermanentCrop: 2500
+    Residential: 3000
+    River: 2500
+    SeaLake: 3000
+
+split:
+  train: 0.70
+  validation: 0.15
+  test: 0.15
+
+eda:
+  examples_per_class: 5
+  figure_dpi: 180
+  output_dir: results/figures
+
+experiment:
+  mode: smoke
+  smoke_samples_per_class: 100
+
+classical:
+  output_dir: results/metrics/classical
+  figure_dir: results/figures/classical
+  model_dir: results/models/classical
+  feature_cache_dir: data/processed/features
+  max_parallel_jobs: 4
+  memory_budget_gb: 6.0
+  smoke:
+    train_samples_per_class: 100
+    validation_samples_per_class: 50
+    pca_components: 32
+    svm_cache_mb: 256
+    random_forest_candidates:
+      - n_estimators: 40
+        max_depth: 20
+        min_samples_leaf: 1
+        max_features: sqrt
+    svm_candidates:
+      - C: 1.0
+        gamma: scale
+        kernel: rbf
+  full:
+    train_samples_per_class: null
+    validation_samples_per_class: null
+    pca_components: 128
+    svm_cache_mb: 1024
+    random_forest_candidates:
+      - n_estimators: 300
+        max_depth: null
+        min_samples_leaf: 1
+        max_features: sqrt
+      - n_estimators: 300
+        max_depth: 30
+        min_samples_leaf: 2
+        max_features: sqrt
+    svm_candidates:
+      - C: 1.0
+        gamma: scale
+        kernel: rbf
+      - C: 10.0
+        gamma: scale
+        kernel: rbf
+
+cnn:
+  output_dir: results/metrics/cnn
+  figure_dir: results/figures/cnn
+  model_dir: results/models/cnn
+  architecture:
+    channels: [32, 64, 128]
+    hidden_units: 256
+    dropout: 0.30
+  optimizer:
+    learning_rate: 0.001
+    weight_decay: 0.0001
+  smoke:
+    train_samples_per_class: 50
+    validation_samples_per_class: 20
+    batch_size: 32
+    epochs: 2
+    early_stopping_patience: 2
+    num_workers: 0
+  full:
+    train_samples_per_class: null
+    validation_samples_per_class: null
+    batch_size: 64
+    epochs: 30
+    early_stopping_patience: 5
+    # Single-process loading avoids torch shared-memory restrictions on macOS.
+    num_workers: 0

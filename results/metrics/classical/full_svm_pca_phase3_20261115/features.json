@@ -1,0 +1,9 @@
+{
+  "dtype": "float32",
+  "feature_dimension": 12288,
+  "test_samples_loaded": 0,
+  "train_cache": "data/processed/features/train_e4c81b918da729d5.npz",
+  "train_samples": 18900,
+  "validation_cache": "data/processed/features/validation_8c72b50045e2cfe5.npz",
+  "validation_samples": 4050
+}

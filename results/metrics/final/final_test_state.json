@@ -1,0 +1,15 @@
+{
+  "completed_at_utc": "2026-11-15T09:24:27.956890+00:00",
+  "inventory_sha256": "cb9d6ae675edacc1fdbbb4c4944e1d56c9c31e622176135ef3d64ec7222c5d27",
+  "models_evaluated": [
+    "random_forest",
+    "random_forest_pca",
+    "svm_pca",
+    "cnn"
+  ],
+  "retraining_or_tuning_performed": false,
+  "run_name": "final_test_phase5",
+  "started_at_utc": "2026-11-15T09:24:15.592346+00:00",
+  "status": "complete",
+  "test_images": 4050
+}

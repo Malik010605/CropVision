@@ -1,0 +1,339 @@
+{
+  "cnn": {
+    "accuracy": 0.9387654320987654,
+    "device": "cpu",
+    "inference_seconds": 3.519123667036183,
+    "macro_f1": 0.9369040584462489,
+    "macro_precision": 0.936558579434562,
+    "macro_recall": 0.9382444444444443,
+    "per_class": {
+      "AnnualCrop": {
+        "f1-score": 0.9368770764119602,
+        "precision": 0.9337748344370861,
+        "recall": 0.94,
+        "support": 450.0
+      },
+      "Forest": {
+        "f1-score": 0.9607390300230947,
+        "precision": 1.0,
+        "recall": 0.9244444444444444,
+        "support": 450.0
+      },
+      "HerbaceousVegetation": {
+        "f1-score": 0.916289592760181,
+        "precision": 0.9331797235023042,
+        "recall": 0.9,
+        "support": 450.0
+      },
+      "Highway": {
+        "f1-score": 0.9199457259158752,
+        "precision": 0.93646408839779,
+        "recall": 0.904,
+        "support": 375.0
+      },
+      "Industrial": {
+        "f1-score": 0.9625668449197861,
+        "precision": 0.9651474530831099,
+        "recall": 0.96,
+        "support": 375.0
+      },
+      "Pasture": {
+        "f1-score": 0.9004739336492891,
+        "precision": 0.8558558558558559,
+        "recall": 0.95,
+        "support": 300.0
+      },
+      "PermanentCrop": {
+        "f1-score": 0.9144385026737968,
+        "precision": 0.9168900804289544,
+        "recall": 0.912,
+        "support": 375.0
+      },
+      "Residential": {
+        "f1-score": 0.9681668496158068,
+        "precision": 0.9566160520607375,
+        "recall": 0.98,
+        "support": 450.0
+      },
+      "River": {
+        "f1-score": 0.917989417989418,
+        "precision": 0.910761154855643,
+        "recall": 0.9253333333333333,
+        "support": 375.0
+      },
+      "SeaLake": {
+        "f1-score": 0.9715536105032823,
+        "precision": 0.9568965517241379,
+        "recall": 0.9866666666666667,
+        "support": 450.0
+      },
+      "accuracy": 0.9387654320987654,
+      "macro avg": {
+        "f1-score": 0.9369040584462489,
+        "precision": 0.936558579434562,
+        "recall": 0.9382444444444443,
+        "support": 4050.0
+      },
+      "weighted avg": {
+        "f1-score": 0.9388584286662497,
+        "precision": 0.9398618569925278,
+        "recall": 0.9387654320987654,
+        "support": 4050.0
+      }
+    },
+    "test_samples": 4050,
+    "timing_scope": "preloaded_normalized_tensor_forward_pass; JPEG_decode_excluded"
+  },
+  "random_forest": {
+    "accuracy": 0.6846913580246914,
+    "inference_seconds": 0.24722320795990527,
+    "macro_f1": 0.669497675703249,
+    "macro_precision": 0.6741093893347533,
+    "macro_recall": 0.6782,
+    "per_class": {
+      "AnnualCrop": {
+        "f1-score": 0.6770508826583593,
+        "precision": 0.6354775828460039,
+        "recall": 0.7244444444444444,
+        "support": 450.0
+      },
+      "Forest": {
+        "f1-score": 0.8813559322033898,
+        "precision": 0.8421052631578947,
+        "recall": 0.9244444444444444,
+        "support": 450.0
+      },
+      "HerbaceousVegetation": {
+        "f1-score": 0.5847255369928401,
+        "precision": 0.6314432989690721,
+        "recall": 0.5444444444444444,
+        "support": 450.0
+      },
+      "Highway": {
+        "f1-score": 0.3882149046793761,
+        "precision": 0.5544554455445545,
+        "recall": 0.2986666666666667,
+        "support": 375.0
+      },
+      "Industrial": {
+        "f1-score": 0.8067632850241546,
+        "precision": 0.7373068432671082,
+        "recall": 0.8906666666666667,
+        "support": 375.0
+      },
+      "Pasture": {
+        "f1-score": 0.723404255319149,
+        "precision": 0.7106109324758842,
+        "recall": 0.7366666666666667,
+        "support": 300.0
+      },
+      "PermanentCrop": {
+        "f1-score": 0.4690265486725664,
+        "precision": 0.5247524752475248,
+        "recall": 0.424,
+        "support": 375.0
+      },
+      "Residential": {
+        "f1-score": 0.6130952380952381,
+        "precision": 0.553763440860215,
+        "recall": 0.6866666666666666,
+        "support": 450.0
+      },
+      "River": {
+        "f1-score": 0.6220472440944882,
+        "precision": 0.6124031007751938,
+        "recall": 0.632,
+        "support": 375.0
+      },
+      "SeaLake": {
+        "f1-score": 0.9292929292929293,
+        "precision": 0.9387755102040817,
+        "recall": 0.92,
+        "support": 450.0
+      },
+      "accuracy": 0.6846913580246914,
+      "macro avg": {
+        "f1-score": 0.669497675703249,
+        "precision": 0.6741093893347533,
+        "recall": 0.6782,
+        "support": 4050.0
+      },
+      "weighted avg": {
+        "f1-score": 0.6747592601682604,
+        "precision": 0.6777115487092414,
+        "recall": 0.6846913580246914,
+        "support": 4050.0
+      }
+    },
+    "test_samples": 4050,
+    "timing_scope": "fitted_pipeline_transform_and_predict; shared_JPEG_decode_excluded"
+  },
+  "random_forest_pca": {
+    "accuracy": 0.6790123456790124,
+    "inference_seconds": 0.20213524997234344,
+    "macro_f1": 0.6599427400396144,
+    "macro_precision": 0.6719644255436675,
+    "macro_recall": 0.6719111111111111,
+    "per_class": {
+      "AnnualCrop": {
+        "f1-score": 0.6336248785228377,
+        "precision": 0.5630397236614854,
+        "recall": 0.7244444444444444,
+        "support": 450.0
+      },
+      "Forest": {
+        "f1-score": 0.925764192139738,
+        "precision": 0.9098712446351931,
+        "recall": 0.9422222222222222,
+        "support": 450.0
+      },
+      "HerbaceousVegetation": {
+        "f1-score": 0.5910165484633569,
+        "precision": 0.6313131313131313,
+        "recall": 0.5555555555555556,
+        "support": 450.0
+      },
+      "Highway": {
+        "f1-score": 0.3452157598499062,
+        "precision": 0.5822784810126582,
+        "recall": 0.24533333333333332,
+        "support": 375.0
+      },
+      "Industrial": {
+        "f1-score": 0.8171296296296297,
+        "precision": 0.721881390593047,
+        "recall": 0.9413333333333334,
+        "support": 375.0
+      },
+      "Pasture": {
+        "f1-score": 0.7452229299363057,
+        "precision": 0.7134146341463414,
+        "recall": 0.78,
+        "support": 300.0
+      },
+      "PermanentCrop": {
+        "f1-score": 0.4349112426035503,
+        "precision": 0.4883720930232558,
+        "recall": 0.392,
+        "support": 375.0
+      },
+      "Residential": {
+        "f1-score": 0.6564593301435406,
+        "precision": 0.5764705882352941,
+        "recall": 0.7622222222222222,
+        "support": 450.0
+      },
+      "River": {
+        "f1-score": 0.5441595441595442,
+        "precision": 0.5840978593272171,
+        "recall": 0.5093333333333333,
+        "support": 375.0
+      },
+      "SeaLake": {
+        "f1-score": 0.9059233449477352,
+        "precision": 0.948905109489051,
+        "recall": 0.8666666666666667,
+        "support": 450.0
+      },
+      "accuracy": 0.6790123456790124,
+      "macro avg": {
+        "f1-score": 0.6599427400396144,
+        "precision": 0.6719644255436675,
+        "recall": 0.6719111111111111,
+        "support": 4050.0
+      },
+      "weighted avg": {
+        "f1-score": 0.6660130067826228,
+        "precision": 0.6761927118587255,
+        "recall": 0.6790123456790124,
+        "support": 4050.0
+      }
+    },
+    "test_samples": 4050,
+    "timing_scope": "fitted_pipeline_transform_and_predict; shared_JPEG_decode_excluded"
+  },
+  "svm_pca": {
+    "accuracy": 0.6723456790123457,
+    "inference_seconds": 3.4488782500266097,
+    "macro_f1": 0.6631802190802694,
+    "macro_precision": 0.663030344255835,
+    "macro_recall": 0.6674888888888888,
+    "per_class": {
+      "AnnualCrop": {
+        "f1-score": 0.6084959816303099,
+        "precision": 0.6294536817102138,
+        "recall": 0.5888888888888889,
+        "support": 450.0
+      },
+      "Forest": {
+        "f1-score": 0.8702928870292888,
+        "precision": 0.8221343873517787,
+        "recall": 0.9244444444444444,
+        "support": 450.0
+      },
+      "HerbaceousVegetation": {
+        "f1-score": 0.600216684723727,
+        "precision": 0.5856236786469344,
+        "recall": 0.6155555555555555,
+        "support": 450.0
+      },
+      "Highway": {
+        "f1-score": 0.3988355167394469,
+        "precision": 0.4391025641025641,
+        "recall": 0.36533333333333334,
+        "support": 375.0
+      },
+      "Industrial": {
+        "f1-score": 0.8431876606683805,
+        "precision": 0.8138957816377171,
+        "recall": 0.8746666666666667,
+        "support": 375.0
+      },
+      "Pasture": {
+        "f1-score": 0.7011308562197092,
+        "precision": 0.6802507836990596,
+        "recall": 0.7233333333333334,
+        "support": 300.0
+      },
+      "PermanentCrop": {
+        "f1-score": 0.5125184094256259,
+        "precision": 0.5723684210526315,
+        "recall": 0.464,
+        "support": 375.0
+      },
+      "Residential": {
+        "f1-score": 0.672782874617737,
+        "precision": 0.6214689265536724,
+        "recall": 0.7333333333333333,
+        "support": 450.0
+      },
+      "River": {
+        "f1-score": 0.6008119079837618,
+        "precision": 0.6098901098901099,
+        "recall": 0.592,
+        "support": 375.0
+      },
+      "SeaLake": {
+        "f1-score": 0.8235294117647058,
+        "precision": 0.8561151079136691,
+        "recall": 0.7933333333333333,
+        "support": 450.0
+      },
+      "accuracy": 0.6723456790123457,
+      "macro avg": {
+        "f1-score": 0.6631802190802694,
+        "precision": 0.663030344255835,
+        "recall": 0.6674888888888888,
+        "support": 4050.0
+      },
+      "weighted avg": {
+        "f1-score": 0.6672814432881393,
+        "precision": 0.6664085594679438,
+        "recall": 0.6723456790123457,
+        "support": 4050.0
+      }
+    },
+    "test_samples": 4050,
+    "timing_scope": "fitted_pipeline_transform_and_predict; shared_JPEG_decode_excluded"
+  }
+}

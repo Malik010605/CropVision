@@ -1,0 +1,133 @@
+{
+  "cache_features": true,
+  "class_names": [
+    "AnnualCrop",
+    "Forest",
+    "HerbaceousVegetation",
+    "Highway",
+    "Industrial",
+    "Pasture",
+    "PermanentCrop",
+    "Residential",
+    "River",
+    "SeaLake"
+  ],
+  "estimated_raw_feature_memory_gb": 0.06866455078125,
+  "max_parallel_jobs": 4,
+  "mode": "smoke",
+  "models": [
+    "random_forest",
+    "random_forest_pca",
+    "svm",
+    "svm_pca"
+  ],
+  "run_name": "smoke_phase3_20261115",
+  "seed": 42,
+  "selection_metric": "validation_macro_f1",
+  "source_config": {
+    "classical": {
+      "feature_cache_dir": "data/processed/features",
+      "figure_dir": "results/figures/classical",
+      "full": {
+        "pca_components": 128,
+        "random_forest_candidates": [
+          {
+            "max_depth": null,
+            "max_features": "sqrt",
+            "min_samples_leaf": 1,
+            "n_estimators": 300
+          },
+          {
+            "max_depth": 30,
+            "max_features": "sqrt",
+            "min_samples_leaf": 2,
+            "n_estimators": 300
+          }
+        ],
+        "svm_cache_mb": 1024,
+        "svm_candidates": [
+          {
+            "C": 1.0,
+            "gamma": "scale",
+            "kernel": "rbf"
+          },
+          {
+            "C": 10.0,
+            "gamma": "scale",
+            "kernel": "rbf"
+          }
+        ],
+        "train_samples_per_class": null,
+        "validation_samples_per_class": null
+      },
+      "max_parallel_jobs": 4,
+      "memory_budget_gb": 6.0,
+      "model_dir": "results/models/classical",
+      "output_dir": "results/metrics/classical",
+      "smoke": {
+        "pca_components": 32,
+        "random_forest_candidates": [
+          {
+            "max_depth": 20,
+            "max_features": "sqrt",
+            "min_samples_leaf": 1,
+            "n_estimators": 40
+          }
+        ],
+        "svm_cache_mb": 256,
+        "svm_candidates": [
+          {
+            "C": 1.0,
+            "gamma": "scale",
+            "kernel": "rbf"
+          }
+        ],
+        "train_samples_per_class": 100,
+        "validation_samples_per_class": 50
+      }
+    },
+    "data": {
+      "archive_md5": "f46e308c4d50d4bf32fedad2d3d62f3b",
+      "dataset_dir": "data/raw/EuroSAT_RGB",
+      "expected_class_counts": {
+        "AnnualCrop": 3000,
+        "Forest": 3000,
+        "HerbaceousVegetation": 3000,
+        "Highway": 2500,
+        "Industrial": 2500,
+        "Pasture": 2000,
+        "PermanentCrop": 2500,
+        "Residential": 3000,
+        "River": 2500,
+        "SeaLake": 3000
+      },
+      "expected_image_size": [
+        64,
+        64
+      ],
+      "expected_mode": "RGB",
+      "raw_dir": "data/raw",
+      "source_url": "https://zenodo.org/records/7711810/files/EuroSAT_RGB.zip?download=1",
+      "split_dir": "data/processed/splits"
+    },
+    "eda": {
+      "examples_per_class": 5,
+      "figure_dpi": 180,
+      "output_dir": "results/figures"
+    },
+    "experiment": {
+      "mode": "smoke",
+      "smoke_samples_per_class": 100
+    },
+    "project": {
+      "name": "CropVision",
+      "seed": 42
+    },
+    "split": {
+      "test": 0.15,
+      "train": 0.7,
+      "validation": 0.15
+    }
+  },
+  "test_features_loaded": 0
+}

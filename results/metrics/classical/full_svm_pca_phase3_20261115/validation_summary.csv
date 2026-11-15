@@ -1,0 +1,2 @@
+model,candidate_index,accuracy,macro_precision,macro_recall,macro_f1,fit_seconds,predict_seconds,train_samples,validation_samples
+svm_pca,1,0.6708641975308642,0.6635398434183097,0.667311111111111,0.6619180752014564,9.717155959049705,3.74054237495875,18900,4050

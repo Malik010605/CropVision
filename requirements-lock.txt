@@ -1,0 +1,14 @@
+# Exact environment used for the published Phase 5 evaluation on Python 3.11.17.
+# requirements.txt remains the portable compatibility specification.
+numpy==2.4.6
+pandas==2.3.3
+Pillow==12.3.0
+PyYAML==6.0.3
+scikit-learn==1.9.1
+matplotlib==3.11.2
+joblib==1.6.0
+torch==2.15.0
+torchvision==0.29.2
+jupyterlab==4.6.6
+ipykernel==7.4.0
+pytest==9.2.0

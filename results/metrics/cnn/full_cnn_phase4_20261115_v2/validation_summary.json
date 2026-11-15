@@ -1,0 +1,91 @@
+{
+  "best_epoch": 21,
+  "best_validation": {
+    "accuracy": 0.9335802469135802,
+    "loss": 0.22694909703584365,
+    "macro_f1": 0.9318313703253402
+  },
+  "checkpoint": "results/models/cnn/full_cnn_phase4_20261115_v2/best_validation_checkpoint.pt",
+  "device": "cpu",
+  "epochs_completed": 26,
+  "parameter_count": 620362,
+  "per_class": {
+    "AnnualCrop": {
+      "f1-score": 0.9301310043668122,
+      "precision": 0.9141630901287554,
+      "recall": 0.9466666666666667,
+      "support": 450.0
+    },
+    "Forest": {
+      "f1-score": 0.9515011547344111,
+      "precision": 0.9903846153846154,
+      "recall": 0.9155555555555556,
+      "support": 450.0
+    },
+    "HerbaceousVegetation": {
+      "f1-score": 0.9055745164960182,
+      "precision": 0.9277389277389277,
+      "recall": 0.8844444444444445,
+      "support": 450.0
+    },
+    "Highway": {
+      "f1-score": 0.9177718832891246,
+      "precision": 0.9129287598944591,
+      "recall": 0.9226666666666666,
+      "support": 375.0
+    },
+    "Industrial": {
+      "f1-score": 0.9566395663956639,
+      "precision": 0.9724517906336089,
+      "recall": 0.9413333333333334,
+      "support": 375.0
+    },
+    "Pasture": {
+      "f1-score": 0.9162717219589257,
+      "precision": 0.8708708708708709,
+      "recall": 0.9666666666666667,
+      "support": 300.0
+    },
+    "PermanentCrop": {
+      "f1-score": 0.8862433862433863,
+      "precision": 0.8792650918635171,
+      "recall": 0.8933333333333333,
+      "support": 375.0
+    },
+    "Residential": {
+      "f1-score": 0.9749182115594329,
+      "precision": 0.9571734475374732,
+      "recall": 0.9933333333333333,
+      "support": 450.0
+    },
+    "River": {
+      "f1-score": 0.9014844804318488,
+      "precision": 0.912568306010929,
+      "recall": 0.8906666666666667,
+      "support": 375.0
+    },
+    "SeaLake": {
+      "f1-score": 0.9777777777777777,
+      "precision": 0.9777777777777777,
+      "recall": 0.9777777777777777,
+      "support": 450.0
+    },
+    "accuracy": 0.9335802469135802,
+    "macro avg": {
+      "f1-score": 0.9318313703253402,
+      "precision": 0.9315322677840936,
+      "recall": 0.9332444444444444,
+      "support": 4050.0
+    },
+    "weighted avg": {
+      "f1-score": 0.9336148048007877,
+      "precision": 0.9346848217944694,
+      "recall": 0.9335802469135802,
+      "support": 4050.0
+    }
+  },
+  "test_samples_loaded": 0,
+  "train_samples": 18900,
+  "training_seconds": 1213.5346392919892,
+  "validation_samples": 4050
+}

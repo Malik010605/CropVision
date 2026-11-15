@@ -1,0 +1,16 @@
+{
+  "missing_from_manifests": 0,
+  "overlaps": {
+    "train/test": 0,
+    "train/validation": 0,
+    "validation/test": 0
+  },
+  "split_counts": {
+    "test": 4050,
+    "train": 18900,
+    "validation": 4050
+  },
+  "total_images": 27000,
+  "unknown_manifest_paths": 0,
+  "validation_images_inspected": 27000
+}

@@ -1,0 +1,39 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Editors and operating systems
+.DS_Store
+.vscode/
+.idea/
+
+# Raw/derived datasets (keep documentation only)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.zip
+
+# Experiment artifacts that are large or reproducible
+results/models/*
+!results/models/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.joblib
+
+# Local logs and secrets
+*.log
+.env
+.env.*
+wandb/
+
+# Superseded/failed local runs (retain only reviewed artifacts)
+results/metrics/cnn/full_cnn_phase4_20261115/
+results/metrics/cnn/smoke_cnn_phase4_20261115/
+results/figures/cnn/smoke_cnn_phase4_20261115/

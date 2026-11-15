@@ -1,0 +1,91 @@
+{
+  "best_epoch": 2,
+  "best_validation": {
+    "accuracy": 0.345,
+    "loss": 1.6563761234283447,
+    "macro_f1": 0.22525587439380543
+  },
+  "checkpoint": "results/models/cnn/smoke_cnn_phase4_20261115_v2/best_validation_checkpoint.pt",
+  "device": "cpu",
+  "epochs_completed": 2,
+  "parameter_count": 620362,
+  "per_class": {
+    "AnnualCrop": {
+      "f1-score": 0.5769230769230769,
+      "precision": 0.46875,
+      "recall": 0.75,
+      "support": 20.0
+    },
+    "Forest": {
+      "f1-score": 0.5277777777777778,
+      "precision": 0.36538461538461536,
+      "recall": 0.95,
+      "support": 20.0
+    },
+    "HerbaceousVegetation": {
+      "f1-score": 0.3448275862068966,
+      "precision": 0.5555555555555556,
+      "recall": 0.25,
+      "support": 20.0
+    },
+    "Highway": {
+      "f1-score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 20.0
+    },
+    "Industrial": {
+      "f1-score": 0.5,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "support": 20.0
+    },
+    "Pasture": {
+      "f1-score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 20.0
+    },
+    "PermanentCrop": {
+      "f1-score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 20.0
+    },
+    "Residential": {
+      "f1-score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 20.0
+    },
+    "River": {
+      "f1-score": 0.30303030303030304,
+      "precision": 0.21739130434782608,
+      "recall": 0.5,
+      "support": 20.0
+    },
+    "SeaLake": {
+      "f1-score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 20.0
+    },
+    "accuracy": 0.345,
+    "macro avg": {
+      "f1-score": 0.22525587439380543,
+      "precision": 0.19404148086213305,
+      "recall": 0.34500000000000003,
+      "support": 200.0
+    },
+    "weighted avg": {
+      "f1-score": 0.22525587439380546,
+      "precision": 0.19404148086213305,
+      "recall": 0.345,
+      "support": 200.0
+    }
+  },
+  "test_samples_loaded": 0,
+  "train_samples": 500,
+  "training_seconds": 2.279872167040594,
+  "validation_samples": 200
+}

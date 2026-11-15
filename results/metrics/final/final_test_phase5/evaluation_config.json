@@ -1,0 +1,124 @@
+{
+  "evaluation": {
+    "cnn_batch_size": 64,
+    "expected_test_images": 4050,
+    "figure_dir": "results/figures/final",
+    "output_dir": "results/metrics/final",
+    "seed": 42,
+    "state_file": "results/metrics/final/final_test_state.json",
+    "test_manifest": "data/processed/splits/test.csv"
+  },
+  "models": {
+    "cnn": {
+      "architecture": {
+        "channels": [
+          32,
+          64,
+          128
+        ],
+        "dropout": 0.3,
+        "hidden_units": 256,
+        "num_classes": 10,
+        "parameter_count": 620362
+      },
+      "artifact": "results/models/cnn/full_cnn_phase4_20261115_v2/best_validation_checkpoint.pt",
+      "expected_validation_accuracy": 0.9335802469135802,
+      "expected_validation_macro_f1": 0.9318313703253402,
+      "kind": "pytorch",
+      "optimizer_used_for_training": {
+        "learning_rate": 0.001,
+        "type": "Adam",
+        "weight_decay": 0.0001
+      },
+      "selected_epoch": 21,
+      "selection_metric": "validation_macro_f1",
+      "sha256": "e2373d2118a20f8e93c05ed30da779ef594c7f9c081e5791086f4e2251def7ac",
+      "source_results": "results/metrics/cnn/full_cnn_phase4_20261115_v2/validation_summary.json",
+      "source_run_config": "results/metrics/cnn/full_cnn_phase4_20261115_v2/run_config.json",
+      "source_runtime": "results/metrics/cnn/full_cnn_phase4_20261115_v2/runtime.json"
+    },
+    "random_forest": {
+      "artifact": "results/models/classical/full_rf_phase3_20261115/random_forest_validation_best_train_only.joblib",
+      "classifier": {
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 300,
+        "random_state": 42,
+        "type": "RandomForestClassifier"
+      },
+      "expected_steps": [
+        "classifier"
+      ],
+      "expected_validation_accuracy": 0.68,
+      "expected_validation_macro_f1": 0.6626745477288265,
+      "kind": "sklearn",
+      "selected_candidate": 0,
+      "sha256": "aeaa7c928087a5509580ec311205a2dddcf4ba3024ef948f3b662d23b92f424a",
+      "source_results": "results/metrics/classical/full_rf_phase3_20261115/validation_results.json",
+      "source_run_config": "results/metrics/classical/full_rf_phase3_20261115/run_config.json",
+      "source_runtime": "results/metrics/classical/full_rf_phase3_20261115/runtime.json"
+    },
+    "random_forest_pca": {
+      "artifact": "results/models/classical/full_rf_phase3_20261115/random_forest_pca_validation_best_train_only.joblib",
+      "classifier": {
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 300,
+        "random_state": 42,
+        "type": "RandomForestClassifier"
+      },
+      "expected_steps": [
+        "scaler",
+        "pca",
+        "classifier"
+      ],
+      "expected_validation_accuracy": 0.682962962962963,
+      "expected_validation_macro_f1": 0.6620930118620428,
+      "kind": "sklearn",
+      "preprocessing": {
+        "pca_components": 128,
+        "pca_random_state": 42,
+        "pca_solver": "randomized",
+        "pca_type": "PCA",
+        "scaler": "StandardScaler"
+      },
+      "selected_candidate": 0,
+      "sha256": "decce1f62af5aeda3e27d6cea4c408b2f27b4bb98bea4a2c0cc21f46bd1d4f30",
+      "source_results": "results/metrics/classical/full_rf_phase3_20261115/validation_results.json",
+      "source_run_config": "results/metrics/classical/full_rf_phase3_20261115/run_config.json",
+      "source_runtime": "results/metrics/classical/full_rf_phase3_20261115/runtime.json"
+    },
+    "svm_pca": {
+      "artifact": "results/models/classical/full_svm_pca_phase3_20261115/svm_pca_validation_best_train_only.joblib",
+      "classifier": {
+        "C": 10.0,
+        "gamma": "scale",
+        "kernel": "rbf",
+        "random_state": 42,
+        "type": "SVC"
+      },
+      "expected_steps": [
+        "scaler",
+        "pca",
+        "classifier"
+      ],
+      "expected_validation_accuracy": 0.6708641975308642,
+      "expected_validation_macro_f1": 0.6619180752014564,
+      "kind": "sklearn",
+      "preprocessing": {
+        "pca_components": 128,
+        "pca_random_state": 42,
+        "pca_solver": "randomized",
+        "pca_type": "PCA",
+        "scaler": "StandardScaler"
+      },
+      "selected_candidate": 1,
+      "sha256": "ec9bf74407a46625564e4590dc756ef377abb14d84acd9bee37f1a3f1173c255",
+      "source_results": "results/metrics/classical/full_svm_pca_phase3_20261115/validation_results.json",
+      "source_run_config": "results/metrics/classical/full_svm_pca_phase3_20261115/run_config.json",
+      "source_runtime": "results/metrics/classical/full_svm_pca_phase3_20261115/runtime.json"
+    }
+  }
+}

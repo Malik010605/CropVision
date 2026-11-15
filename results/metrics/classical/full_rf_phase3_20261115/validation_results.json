@@ -1,0 +1,380 @@
+{
+  "random_forest": {
+    "best_candidate_index": 0,
+    "best_model_path": "results/models/classical/full_rf_phase3_20261115/random_forest_validation_best_train_only.joblib",
+    "candidates": [
+      {
+        "accuracy": 0.68,
+        "candidate_index": 0,
+        "classifier_parameters": {
+          "max_depth": null,
+          "max_features": "sqrt",
+          "min_samples_leaf": 1,
+          "n_estimators": 300
+        },
+        "fit_seconds": 76.63526137499139,
+        "macro_f1": 0.6626745477288265,
+        "macro_precision": 0.6661476626742121,
+        "macro_recall": 0.6741333333333334,
+        "pca_components": null,
+        "per_class": {
+          "AnnualCrop": {
+            "f1-score": 0.6960985626283368,
+            "precision": 0.6469465648854962,
+            "recall": 0.7533333333333333,
+            "support": 450.0
+          },
+          "Forest": {
+            "f1-score": 0.8623265741728922,
+            "precision": 0.8295687885010267,
+            "recall": 0.8977777777777778,
+            "support": 450.0
+          },
+          "HerbaceousVegetation": {
+            "f1-score": 0.5974625144175317,
+            "precision": 0.6211031175059952,
+            "recall": 0.5755555555555556,
+            "support": 450.0
+          },
+          "Highway": {
+            "f1-score": 0.36300174520069806,
+            "precision": 0.5252525252525253,
+            "recall": 0.2773333333333333,
+            "support": 375.0
+          },
+          "Industrial": {
+            "f1-score": 0.7924080664294187,
+            "precision": 0.7136752136752137,
+            "recall": 0.8906666666666667,
+            "support": 375.0
+          },
+          "Pasture": {
+            "f1-score": 0.7238689547581904,
+            "precision": 0.6803519061583577,
+            "recall": 0.7733333333333333,
+            "support": 300.0
+          },
+          "PermanentCrop": {
+            "f1-score": 0.42040185471406494,
+            "precision": 0.5,
+            "recall": 0.3626666666666667,
+            "support": 375.0
+          },
+          "Residential": {
+            "f1-score": 0.6281661600810537,
+            "precision": 0.5772811918063314,
+            "recall": 0.6888888888888889,
+            "support": 450.0
+          },
+          "River": {
+            "f1-score": 0.6387434554973822,
+            "precision": 0.6272493573264781,
+            "recall": 0.6506666666666666,
+            "support": 375.0
+          },
+          "SeaLake": {
+            "f1-score": 0.9042675893886967,
+            "precision": 0.9400479616306955,
+            "recall": 0.8711111111111111,
+            "support": 450.0
+          },
+          "accuracy": 0.68,
+          "macro avg": {
+            "f1-score": 0.6626745477288265,
+            "precision": 0.6661476626742121,
+            "recall": 0.6741333333333334,
+            "support": 4050.0
+          },
+          "weighted avg": {
+            "f1-score": 0.6684848117105859,
+            "precision": 0.6711477565163293,
+            "recall": 0.68,
+            "support": 4050.0
+          }
+        },
+        "predict_seconds": 0.38778283301508054
+      },
+      {
+        "accuracy": 0.674074074074074,
+        "candidate_index": 1,
+        "classifier_parameters": {
+          "max_depth": 30,
+          "max_features": "sqrt",
+          "min_samples_leaf": 2,
+          "n_estimators": 300
+        },
+        "fit_seconds": 74.97593770903768,
+        "macro_f1": 0.6580317585380687,
+        "macro_precision": 0.6619803648899371,
+        "macro_recall": 0.6694444444444444,
+        "pca_components": null,
+        "per_class": {
+          "AnnualCrop": {
+            "f1-score": 0.6874350986500519,
+            "precision": 0.645224171539961,
+            "recall": 0.7355555555555555,
+            "support": 450.0
+          },
+          "Forest": {
+            "f1-score": 0.8651564185544768,
+            "precision": 0.8406708595387841,
+            "recall": 0.8911111111111111,
+            "support": 450.0
+          },
+          "HerbaceousVegetation": {
+            "f1-score": 0.5727923627684964,
+            "precision": 0.6185567010309279,
+            "recall": 0.5333333333333333,
+            "support": 450.0
+          },
+          "Highway": {
+            "f1-score": 0.36684303350970016,
+            "precision": 0.5416666666666666,
+            "recall": 0.2773333333333333,
+            "support": 375.0
+          },
+          "Industrial": {
+            "f1-score": 0.8084606345475911,
+            "precision": 0.7226890756302521,
+            "recall": 0.9173333333333333,
+            "support": 375.0
+          },
+          "Pasture": {
+            "f1-score": 0.7122861586314152,
+            "precision": 0.6676384839650146,
+            "recall": 0.7633333333333333,
+            "support": 300.0
+          },
+          "PermanentCrop": {
+            "f1-score": 0.4237037037037037,
+            "precision": 0.4766666666666667,
+            "recall": 0.38133333333333336,
+            "support": 375.0
+          },
+          "Residential": {
+            "f1-score": 0.5991902834008097,
+            "precision": 0.550185873605948,
+            "recall": 0.6577777777777778,
+            "support": 450.0
+          },
+          "River": {
+            "f1-score": 0.6368286445012787,
+            "precision": 0.6117936117936118,
+            "recall": 0.664,
+            "support": 375.0
+          },
+          "SeaLake": {
+            "f1-score": 0.9076212471131639,
+            "precision": 0.9447115384615384,
+            "recall": 0.8733333333333333,
+            "support": 450.0
+          },
+          "accuracy": 0.674074074074074,
+          "macro avg": {
+            "f1-score": 0.6580317585380687,
+            "precision": 0.6619803648899371,
+            "recall": 0.6694444444444444,
+            "support": 4050.0
+          },
+          "weighted avg": {
+            "f1-score": 0.6633610588659078,
+            "precision": 0.6672357204575741,
+            "recall": 0.674074074074074,
+            "support": 4050.0
+          }
+        },
+        "predict_seconds": 0.22586775000672787
+      }
+    ],
+    "selection_metric": "macro_f1"
+  },
+  "random_forest_pca": {
+    "best_candidate_index": 0,
+    "best_model_path": "results/models/classical/full_rf_phase3_20261115/random_forest_pca_validation_best_train_only.joblib",
+    "candidates": [
+      {
+        "accuracy": 0.682962962962963,
+        "candidate_index": 0,
+        "classifier_parameters": {
+          "max_depth": null,
+          "max_features": "sqrt",
+          "min_samples_leaf": 1,
+          "n_estimators": 300
+        },
+        "fit_seconds": 25.048845708952285,
+        "macro_f1": 0.6620930118620428,
+        "macro_precision": 0.674900014527055,
+        "macro_recall": 0.6749333333333333,
+        "pca_components": 128,
+        "per_class": {
+          "AnnualCrop": {
+            "f1-score": 0.6455331412103746,
+            "precision": 0.5685279187817259,
+            "recall": 0.7466666666666667,
+            "support": 450.0
+          },
+          "Forest": {
+            "f1-score": 0.9096844396082698,
+            "precision": 0.8912579957356077,
+            "recall": 0.9288888888888889,
+            "support": 450.0
+          },
+          "HerbaceousVegetation": {
+            "f1-score": 0.6014319809069213,
+            "precision": 0.6494845360824743,
+            "recall": 0.56,
+            "support": 450.0
+          },
+          "Highway": {
+            "f1-score": 0.3231939163498099,
+            "precision": 0.5629139072847682,
+            "recall": 0.22666666666666666,
+            "support": 375.0
+          },
+          "Industrial": {
+            "f1-score": 0.8372641509433962,
+            "precision": 0.7505285412262156,
+            "recall": 0.9466666666666667,
+            "support": 375.0
+          },
+          "Pasture": {
+            "f1-score": 0.733652312599681,
+            "precision": 0.7033639143730887,
+            "recall": 0.7666666666666667,
+            "support": 300.0
+          },
+          "PermanentCrop": {
+            "f1-score": 0.44411326378539495,
+            "precision": 0.5033783783783784,
+            "recall": 0.3973333333333333,
+            "support": 375.0
+          },
+          "Residential": {
+            "f1-score": 0.6753975678203928,
+            "precision": 0.5831987075928917,
+            "recall": 0.8022222222222222,
+            "support": 450.0
+          },
+          "River": {
+            "f1-score": 0.5462304409672831,
+            "precision": 0.5853658536585366,
+            "recall": 0.512,
+            "support": 375.0
+          },
+          "SeaLake": {
+            "f1-score": 0.9044289044289044,
+            "precision": 0.9509803921568627,
+            "recall": 0.8622222222222222,
+            "support": 450.0
+          },
+          "accuracy": 0.682962962962963,
+          "macro avg": {
+            "f1-score": 0.6620930118620428,
+            "precision": 0.674900014527055,
+            "recall": 0.6749333333333333,
+            "support": 4050.0
+          },
+          "weighted avg": {
+            "f1-score": 0.6686569317495801,
+            "precision": 0.6793534511542448,
+            "recall": 0.682962962962963,
+            "support": 4050.0
+          }
+        },
+        "predict_seconds": 0.6958453329862095
+      },
+      {
+        "accuracy": 0.6750617283950617,
+        "candidate_index": 1,
+        "classifier_parameters": {
+          "max_depth": 30,
+          "max_features": "sqrt",
+          "min_samples_leaf": 2,
+          "n_estimators": 300
+        },
+        "fit_seconds": 23.928915125026833,
+        "macro_f1": 0.6533953929975904,
+        "macro_precision": 0.6634710229627182,
+        "macro_recall": 0.6673111111111112,
+        "pca_components": 128,
+        "per_class": {
+          "AnnualCrop": {
+            "f1-score": 0.6378802747791953,
+            "precision": 0.5711775043936731,
+            "recall": 0.7222222222222222,
+            "support": 450.0
+          },
+          "Forest": {
+            "f1-score": 0.9106753812636166,
+            "precision": 0.8931623931623932,
+            "recall": 0.9288888888888889,
+            "support": 450.0
+          },
+          "HerbaceousVegetation": {
+            "f1-score": 0.5926800472255017,
+            "precision": 0.6322418136020151,
+            "recall": 0.5577777777777778,
+            "support": 450.0
+          },
+          "Highway": {
+            "f1-score": 0.2998102466793169,
+            "precision": 0.5197368421052632,
+            "recall": 0.21066666666666667,
+            "support": 375.0
+          },
+          "Industrial": {
+            "f1-score": 0.815668202764977,
+            "precision": 0.718052738336714,
+            "recall": 0.944,
+            "support": 375.0
+          },
+          "Pasture": {
+            "f1-score": 0.7246835443037974,
+            "precision": 0.6897590361445783,
+            "recall": 0.7633333333333333,
+            "support": 300.0
+          },
+          "PermanentCrop": {
+            "f1-score": 0.4388059701492537,
+            "precision": 0.49830508474576274,
+            "recall": 0.392,
+            "support": 375.0
+          },
+          "Residential": {
+            "f1-score": 0.6641438032166509,
+            "precision": 0.5782537067545305,
+            "recall": 0.78,
+            "support": 450.0
+          },
+          "River": {
+            "f1-score": 0.5462304409672831,
+            "precision": 0.5853658536585366,
+            "recall": 0.512,
+            "support": 375.0
+          },
+          "SeaLake": {
+            "f1-score": 0.9033760186263097,
+            "precision": 0.9486552567237164,
+            "recall": 0.8622222222222222,
+            "support": 450.0
+          },
+          "accuracy": 0.6750617283950617,
+          "macro avg": {
+            "f1-score": 0.6533953929975904,
+            "precision": 0.6634710229627182,
+            "recall": 0.6673111111111112,
+            "support": 4050.0
+          },
+          "weighted avg": {
+            "f1-score": 0.6602563264942035,
+            "precision": 0.6686533849375493,
+            "recall": 0.6750617283950617,
+            "support": 4050.0
+          }
+        },
+        "predict_seconds": 0.26782820897642523
+      }
+    ],
+    "selection_metric": "macro_f1"
+  }
+}
